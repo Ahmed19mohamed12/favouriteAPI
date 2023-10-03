@@ -27,4 +27,4 @@ def home():
         
         return d
     except Exception as e:
-        return e
+        print(e)
