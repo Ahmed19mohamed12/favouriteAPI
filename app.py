@@ -8,7 +8,7 @@ def home():
     d = {}
     d['Query'] = str(request.args['Query'])
     yt = YouTube("https://www.youtube.com/watch?v="+str(request.args['Query']))
-
+    yt.set_api_key("/api")
     # Get the video title and author
     title = yt.title
     author = yt.author
