@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/api", methods=['GET'])
 def home():
-    os.environ['PYTUBE_API_KEY'] = 'AIzaSyDBGNFT_ueoyeIaDa-Bb3fjPOmUe4E3i9E'
+    # os.environ['PYTUBE_API_KEY'] = 'AIzaSyDBGNFT_ueoyeIaDa-Bb3fjPOmUe4E3i9E'
     d = {}
     d['Query'] = str(request.args['Query'])
     yt = YouTube("https://www.youtube.com/watch?v="+str(request.args['Query']))
